@@ -43,11 +43,6 @@ button{
     font-weight: 400;
 }
 
-.social:hover{
-    background-color: #FFFF00;
-}
-
-
 .fleche:hover {
   background-color: #b6b2b2;
 }
@@ -100,8 +95,7 @@ nav ul a:hover{
     color: var(--yellow-color);
 }
 
-.logo:hover,
-.social:hover{
+.logo:hover {
     -webkit-filter: invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%);
             filter: invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%);
 }
@@ -167,6 +161,25 @@ h1, h2, h3, p {
     }
 }
 
+@media (max-width: 600px) {
+    .cont {
+        width: 100%;
+    }
+    .logo {
+        max-width: 80%;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .cont {
+        width: 80%;
+    }
+    .logo {
+        max-width: 120px;
+    }
+}
+
 .btn{
     text-decoration: none;
     color: var(--white-color);
@@ -209,8 +222,14 @@ h1, h2, h3, p {
     cursor: pointer;
 }
   
-  .scroll img:hover {
-    filter: brightness(150%);
+.scroll img:hover {
+       -webkit-filter: invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%);
+       filter: invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%);
+}
+
+.social-footer img:hover {
+      -webkit-filter: invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%);
+      filter: invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg) brightness(109%) contrast(104%);
 }
 
 #batman-cinema, #batman-justice-league, #nemesis, #Alliés{
@@ -307,7 +326,7 @@ h1{
  
 #multimedia .slider-content{
     padding: 15px;
-    background-color: #727272;
+    background-color: #5c1010;
 
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
