@@ -5,6 +5,7 @@
     src: url(/assets/Rajdhani-Medium.ttf);
 }
 
+/* Styles pour l'ensemble du document */
 html {
     position: relative;
     z-index: 1;
@@ -14,7 +15,7 @@ html {
     position: relative;
     z-index: 2;
   }
-
+/* Couleurs personnalisées */
 :root{
     --yellow-color: #FFFF00;
     --yellow-light: #f8f184;
@@ -24,7 +25,7 @@ html {
     --gradient-red:#89000978;
     --black-color: #000;
 }
-
+/* Réinitialisation des styles par défaut */
 *{
     margin: 0;
     padding: 0;
@@ -269,20 +270,23 @@ h1, h2, h3, p {
     text-align: center;
 }
 
+/* Styles pour la mise en page de l'image et du texte superposés */
 .imgtxt {
     position: relative;
     width: 100%;
-
 }
+
 .imgtxt {
     display: inline-flex;
 }
 
+/* Styles pour le titre h1 */
 h1{
     position: relative;
     z-index: 1;
 }
 
+/* Styles pour la superposition de contenu */
 .superpose{
     position: absolute;
     top: -70px;
@@ -299,10 +303,12 @@ h1{
     z-index: 2;
 }
 
+/* Espacement vertical */
 .espace-vertical {
     height: 70px;
-  }
+}
 
+/* Styles pour les boutons du multimédia */
 #multimedia button{
     position: relative;
     top: 155px;
@@ -314,6 +320,7 @@ h1{
     right: -85%;
 }
 
+/* Styles pour le contenu du slider multimédia */
 #multimedia .slider-multimedia{
     display: flex;
     width: 60%;
@@ -323,11 +330,10 @@ h1{
 #multimedia .slider-image{
     width: 100%;
 }
- 
+
 #multimedia .slider-content{
     padding: 15px;
     background-color: #5c1010;
-
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 }
@@ -340,19 +346,26 @@ h1{
     color: var(--yellow-color);
 }
 
+/* Styles pour les boutons gauche et droite lorsqu'ils sont survolés */
+
 .left:hover,
 .right:hover {
   background-color: white;
   color: black;
 }
 
+/* Styles pour la video */
 .video-container {
     text-align: center;
 }
-  
-  .image-bande-annonce {
+
+/* Styles pour l'image de la bande d'annonce */
+
+.image-bande-annonce {
     display: inline-block;
 }
+
+/* Styles pour la section de contact */
 
 #contact{
     background-color: darkslategrey;
@@ -396,9 +409,13 @@ h1{
     width: 20px;
 }
 
+/* Styles pour la liste de jeux */
+
 .jl{
     width: 100%;
 }
+
+/* Styles pour les menus déroulants */
 
 .dropdown{
     position: relative;
@@ -417,9 +434,13 @@ h1{
     color: rgb(251, 252, 252);
 }
 
+/* Lorsque survolé, affiche le contenu du menu déroulant */
+
 .dropdown:hover .dropdown-content{
     display: flex;
 }
+
+/* Styles pour les placeholders des champs de saisie */
 
 ::-webkit-input-placeholder{
     color: #f8f184;
@@ -446,29 +467,32 @@ h1{
     font-size: 15px;
 }
 
+/* Styles pour un groupe de boutons */
+
 .btn-group{
     padding: 10px;
     display: flex;
     justify-content: space-around;
 }
 
+/* Masque les boutons radio */
+
 .form input[type='radio']{
     opacity: 0;
 }
+
+/* Styles pour les étiquettes des boutons */
 
 .btn-group label{
     cursor: pointer;
     border: 2px solid;
     padding: 10px;
-          -o-border-image:  linear-gradient(
-            69deg,red,blue
-          ) 1;
-             border-image:  linear-gradient(
-            69deg,red,blue
-          ) 1;
-    
+    -o-border-image: linear-gradient(69deg, red, blue) 1;
+    border-image: linear-gradient(69deg, red, blue) 1;
     font-size: 20px;
 }
+
+/* Styles pour le bouton de soumission */
 
 input[type='submit']{
     display: block;
@@ -477,6 +501,8 @@ input[type='submit']{
     padding: 15px 0;
     cursor: pointer;    
 }
+
+/* Styles pour la section des citations */
 
 #citations{
     margin: 90px;
@@ -492,49 +518,54 @@ input[type='submit']{
     padding-top: 30px;
     font-size: 14px;
     font-family: 'radjhani';
-  }
+}
 
 #citations .guillemet-close{
-float: right;
-  }
+    float: right;
+}
 
+/* Styles pour le pied de page */
 
 footer{
     margin-top: 162px;
-  }
+}
 
 footer .text-footer{
-text-align: center;
-font-size: 14px;
-  }
+    text-align: center;
+    font-size: 14px;
+}
 
 footer .social-footer{
     text-align: center;
     margin: 50px 0;
-  }
+}
 
 footer .social-item{
     padding: 15px;
-  }
+}
+
+/* Styles pour le barres de défilement */
+
 ::-webkit-scrollbar {
     width: 10px;
-  }
+}
   
 ::-webkit-scrollbar-track {
     background-color: #414040;
-  }
+}
   
 ::-webkit-scrollbar-thumb {
     background-color: #888;
     border-radius: 5px;
-  }
+}
 
+/* Styles pour iframes */
 iframe{
-   align-self: center;
+    align-self: center;
     width: 560px;
     height: 400px;
     border: none;
     margin: 0 auto;
     display: block;
     border: 0;
-  }
+}
