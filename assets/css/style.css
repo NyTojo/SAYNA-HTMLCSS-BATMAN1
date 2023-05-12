@@ -214,6 +214,12 @@ h1, h2, h3, p {
     background: linear-gradient(80deg, #c0c0c0, #c90000);
     color: #ffffff;
 }
+/* Styles pour un groupe de boutons */
+.btn-group{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
 
 #hero .fleche{
     display: block;
@@ -226,7 +232,7 @@ h1, h2, h3, p {
     flex-direction: column;
     align-items: center;
     position: fixed;
-    right: 30px;
+    right: 25px;
     top: 230px;
     z-index: 10;
 }
@@ -322,7 +328,7 @@ h1{
 
 /* Espacement vertical */
 .espace-vertical {
-    height: 70px;
+    height: 65px;
 }
 
 /* Styles pour les boutons du multimédia */
@@ -436,13 +442,14 @@ h1{
 
 .dropdown{
     position: relative;
-    display: inline-block;
+    display: table;
 }
 
 .dropdown-content{
-    display: inline-flex;
+    display: table-column;
     position: absolute;
     z-index: 2;
+    padding: 14px;
 }
 
 .dropdown-content a{
@@ -482,14 +489,6 @@ h1{
 ::placeholder{
     color: #f8f184;
     font-size: 15px;
-}
-
-/* Styles pour un groupe de boutons */
-
-.btn-group{
-    padding: 10px;
-    display: flex;
-    justify-content: space-around;
 }
 
 /* Masque les boutons radio */
