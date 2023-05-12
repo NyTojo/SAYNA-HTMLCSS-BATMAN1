@@ -181,7 +181,7 @@ h1, h2, h3, p {
 
 @media (max-width: 600px) {
     .cont {
-        width: 100%;
+        width: 120%;
     }
     .logo {
         max-width: 80%;
