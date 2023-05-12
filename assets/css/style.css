@@ -60,12 +60,29 @@ body{
     font-weight: 300;
 }
 
-.up-bar{
-    border-top: #727272 2px solid;
+.up-bar {
+    border-top: #807e7e7c 2px solid;
     position: relative;
     top: 132px;
     width: 85%;
     left: 102px;
+}
+.left-bar,
+.right-bar {
+  position: absolute;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #807e7e7c;
+  z-index: 4;
+}
+
+.left-bar {
+  left: 102px;
+}
+
+.right-bar {
+  right: 88px;
 }
 
 nav{
