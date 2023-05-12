@@ -443,6 +443,9 @@ h1{
 .dropdown{
     position: relative;
     display: table;
+    font-size: 22px;
+    padding: 10px 40px;
+    margin-top: 10px;
 }
 
 .dropdown-content{
@@ -461,7 +464,7 @@ h1{
 /* Lorsque survolé, affiche le contenu du menu déroulant */
 
 .dropdown:hover .dropdown-content{
-    display: flex;
+    display: table-column;
 }
 
 /* Styles pour les placeholders des champs de saisie */
