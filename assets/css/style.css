@@ -171,13 +171,20 @@ h1, h2, h3, p {
 
 @media (max-width: 600px) {
     .cont {
-        width: 120%;
+        width: 60%;
     }
     .logo {
-        max-width: 80%;
+        max-width: 50%;
     }
 }
 
+@media (max-width: 600px) {
+    
+    .cont {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
 
 @media (min-width: 1200px) {
     .cont {
