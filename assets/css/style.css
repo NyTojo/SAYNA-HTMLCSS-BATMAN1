@@ -263,6 +263,7 @@ h1, h2, h3, p {
 .enemies{
     display: inline-block;
 }
+
 .batman-personnage{
     display: flex;
     justify-content: space-between;
@@ -450,8 +451,8 @@ h1{
 
 .dropdown-content{
     display: table-column;
-    position: absolute;
-    z-index: 2;
+    position: relative;
+    z-index: 1;
     padding: 14px;
 }
 
@@ -465,8 +466,12 @@ h1{
 
 .dropdown:hover .dropdown-content{
     display: table-column;
+    z-index: 3;
 }
 
+.popup{
+    width: 200px;
+}
 /* Styles pour les placeholders des champs de saisie */
 
 ::-webkit-input-placeholder{
