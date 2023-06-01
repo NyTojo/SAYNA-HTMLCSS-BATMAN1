@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Batman begins</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/script/script.js"></script>
 </head>
 <body>
     <div class="up-bar"></div>
@@ -209,19 +210,18 @@ surnaturelles menacent son existence.
                     <label class="titre" for="newsletterb vff">NEWSLETTER</label>
                         <label for="check">En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de Batman :</label>
                         <input type="checkbox" id="check" name="newsletter" value="oui">
-                    <div class="dropdown">
+                    <div class="dropdown" onclick="toggleDropdown()">
                         <span>Choisissez la fréquence à laquelle vous souhaitez recevoir votre newslette</span>
                         <span class="icon" >
                             <img src="./assets/Logos/icon_flèche_2.png" alt="open" >
                         </span>
                         <div class="dropdown-content">
-                            <a href="#" onclick="showPopup('./Popup_Box.png')">Une fois par semaine</a>
-                            <a href="#" onclick="showPopup('./Popup_Box.png')">Une fois tous les deux semaines (2 fois par mois)</a>
-                            <a href="#" onclick="showPopup('./Popup_Box.png')">Une fois par mois</a>
-                            <a href="#" onclick="showPopup('./Popup_Box.png')">Une fois tous les trois mois</a>
-                            <a href="#" onclick="showPopup('./Popup_Box.png')">Une fois tous les six mois</a>
-                          </div>
-                          <div id="popup"></div>
+                            <a href="#" onclick="showPopup('./assets/Popup-Box.png')">Une fois par semaine</a>
+                            <a href="#" onclick="showPopup('./assets/Popup-Box.png')">Une fois tous les deux semaines (2 fois par mois)</a>
+                            <a href="#" onclick="showPopup('./assets/Popup-Box.png')">Une fois par mois</a>
+                            <a href="#" onclick="showPopup('./assets/Popup-Box.png')">Une fois tous les trois mois</a>
+                            <a href="#" onclick="showPopup('./assets/Popup-Box.png')">Une fois tous les six mois</a>
+                        </div>
                     </div>
                     <div>
                         <p class="news" >Souhaitez-vous recevoir des news
@@ -287,6 +287,7 @@ surnaturelles menacent son existence.
     </footer>
     <div class="espace-vertical"></div>
 </body>
+<script src="./assets/script/script.js"></script>
 <div class="cont">
     <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-4">

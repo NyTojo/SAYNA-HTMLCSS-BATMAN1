@@ -467,21 +467,21 @@ section#contact .left-bar {
 }
 
 .dropdown-content a{
-    background: linear-gradient(to right, rgb(1, 105, 100), rgb(2, 117, 117));
+    background: rgb(55, 94, 94);
     display: flex;
     color: rgb(251, 252, 252);
 }
 
-/* Lorsque survolé, affiche le contenu du menu déroulant */
+/*contenu du menu déroulant */
 
-.dropdown:hover .dropdown-content{
-    display: table;
-    z-index: 3;
+.dropdown-content{
+    display: none;
 }
 
 .popup{
     width: 200px;
 }
+
 /* Styles pour les placeholders des champs de saisie */
 
 ::-webkit-input-placeholder{
